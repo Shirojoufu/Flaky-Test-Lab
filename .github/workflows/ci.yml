@@ -55,7 +55,7 @@ jobs:
       # This repo exists to be flaky, so failures don't fail the job: the report is the point.
       - name: Detect flaky tests
         if: always() && steps.tests.outcome != 'skipped'
-        uses: Shirojoufu/Flaky-Tests@ec75748fc1a393599e37fe60872e412d57e89ae8
+        uses: Shirojoufu/Flaky-Tests@ec75748fc1a393599e37fe60872e412d57e89ae8 # v0.1.0
         with:
           junit: .flaky/junit.xml
           retry-junit: .flaky/junit-retry-*.xml
