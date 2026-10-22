@@ -1,0 +1,60 @@
+{
+ "available": true,
+ "run_index": 0,
+ "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+ "percent": 84.27,
+ "statements": 248,
+ "covered": 209,
+ "threshold": 80.0,
+ "baseline": null,
+ "below_threshold": [
+  {
+   "file": "lab/node.py",
+   "percent": 0.0,
+   "statements": 14,
+   "covered": 0,
+   "missing": [
+    [
+     3,
+     3
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     9,
+     9
+    ],
+    [
+     12,
+     18
+    ],
+    [
+     21,
+     22
+    ]
+   ]
+  },
+  {
+   "file": "lab/service.py",
+   "percent": 68.57,
+   "statements": 35,
+   "covered": 24,
+   "missing": [
+    [
+     35,
+     43
+    ],
+    [
+     50,
+     51
+    ]
+   ]
+  }
+ ],
+ "never_executed": [
+  "lab/node.py"
+ ],
+ "diff": null
+}

@@ -1,0 +1,300 @@
+[
+ {
+  "key": "tests.test_service.test_call_right_after_start",
+  "status": "flaky",
+  "severity": "medium",
+  "observations": 2,
+  "failures": 1,
+  "flaky_observations": 2,
+  "flaky_failures": 1,
+  "failure_rate": 0.5,
+  "flips": 1,
+  "retry_flakes": 1,
+  "main_failures": 1,
+  "active": true,
+  "flaky_fingerprints": [
+   "2c86e91be0373bec1e68"
+  ],
+  "flaky_runs": [
+   0
+  ],
+  "first_flaky_failure": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "introduced_in": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "previous_code_seen_in": null,
+  "failing_since": null,
+  "last_failure": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "last_seen": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "timeline": [
+   [
+    0,
+    0,
+    "failed"
+   ],
+   [
+    0,
+    1,
+    "passed"
+   ]
+  ]
+ },
+ {
+  "key": "tests.test_settings.test_default_currency",
+  "status": "flaky",
+  "severity": "medium",
+  "observations": 2,
+  "failures": 1,
+  "flaky_observations": 2,
+  "flaky_failures": 1,
+  "failure_rate": 0.5,
+  "flips": 1,
+  "retry_flakes": 1,
+  "main_failures": 1,
+  "active": true,
+  "flaky_fingerprints": [
+   "d87c8fb0d86169ce2d83"
+  ],
+  "flaky_runs": [
+   0
+  ],
+  "first_flaky_failure": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "introduced_in": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "previous_code_seen_in": null,
+  "failing_since": null,
+  "last_failure": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "last_seen": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "timeline": [
+   [
+    0,
+    0,
+    "failed"
+   ],
+   [
+    0,
+    1,
+    "passed"
+   ]
+  ]
+ },
+ {
+  "key": "tests.test_storage.test_write_and_read_back",
+  "status": "flaky",
+  "severity": "medium",
+  "observations": 2,
+  "failures": 1,
+  "flaky_observations": 2,
+  "flaky_failures": 1,
+  "failure_rate": 0.5,
+  "flips": 1,
+  "retry_flakes": 1,
+  "main_failures": 1,
+  "active": true,
+  "flaky_fingerprints": [
+   "50115c6859c7f4ba7519"
+  ],
+  "flaky_runs": [
+   0
+  ],
+  "first_flaky_failure": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "introduced_in": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "previous_code_seen_in": null,
+  "failing_since": null,
+  "last_failure": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "last_seen": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "timeline": [
+   [
+    0,
+    0,
+    "failed"
+   ],
+   [
+    0,
+    1,
+    "passed"
+   ]
+  ]
+ },
+ {
+  "key": "tests.test_stats.test_mean_of_high_readings",
+  "status": "failing",
+  "severity": null,
+  "observations": 2,
+  "failures": 2,
+  "flaky_observations": 0,
+  "flaky_failures": 0,
+  "failure_rate": 0.0,
+  "flips": 0,
+  "retry_flakes": 0,
+  "main_failures": 0,
+  "active": false,
+  "flaky_fingerprints": [],
+  "flaky_runs": [],
+  "first_flaky_failure": null,
+  "introduced_in": null,
+  "previous_code_seen_in": null,
+  "failing_since": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "last_failure": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "last_seen": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "timeline": [
+   [
+    0,
+    0,
+    "failed"
+   ],
+   [
+    0,
+    1,
+    "failed"
+   ]
+  ]
+ }
+]
