@@ -3,11 +3,11 @@
   "key": "tests.test_bank.test_concurrent_deposits_are_not_lost",
   "status": "flaky",
   "severity": "medium",
-  "observations": 3,
+  "observations": 4,
   "failures": 1,
-  "flaky_observations": 3,
+  "flaky_observations": 4,
   "flaky_failures": 1,
-  "failure_rate": 0.3333,
+  "failure_rate": 0.25,
   "flips": 2,
   "retry_flakes": 1,
   "main_failures": 1,
@@ -17,7 +17,8 @@
   ],
   "flaky_runs": [
    0,
-   1
+   1,
+   2
   ],
   "first_flaky_failure": {
    "index": 1,
@@ -55,14 +56,14 @@
    "run_attempt": 1
   },
   "last_seen": {
-   "index": 1,
-   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
-   "timestamp": "2026-10-22T18:06:03Z",
+   "index": 2,
+   "sha": "f1831d10a38d31f5b26c3f6a90394208bbd793a2",
+   "timestamp": "2026-10-22T20:59:19Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39828374317",
+   "run_id": "39853467004",
    "run_attempt": 1
   },
   "timeline": [
@@ -80,6 +81,11 @@
     1,
     1,
     "passed"
+   ],
+   [
+    2,
+    0,
+    "passed"
    ]
   ]
  },
@@ -87,11 +93,11 @@
   "key": "tests.test_service.test_call_right_after_start",
   "status": "flaky",
   "severity": "medium",
-  "observations": 3,
+  "observations": 4,
   "failures": 1,
-  "flaky_observations": 3,
+  "flaky_observations": 4,
   "flaky_failures": 1,
-  "failure_rate": 0.3333,
+  "failure_rate": 0.25,
   "flips": 1,
   "retry_flakes": 1,
   "main_failures": 1,
@@ -101,7 +107,8 @@
   ],
   "flaky_runs": [
    0,
-   1
+   1,
+   2
   ],
   "first_flaky_failure": {
    "index": 0,
@@ -139,14 +146,14 @@
    "run_attempt": 1
   },
   "last_seen": {
-   "index": 1,
-   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
-   "timestamp": "2026-10-22T18:06:03Z",
+   "index": 2,
+   "sha": "f1831d10a38d31f5b26c3f6a90394208bbd793a2",
+   "timestamp": "2026-10-22T20:59:19Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39828374317",
+   "run_id": "39853467004",
    "run_attempt": 1
   },
   "timeline": [
@@ -162,6 +169,11 @@
    ],
    [
     1,
+    0,
+    "passed"
+   ],
+   [
+    2,
     0,
     "passed"
    ]
@@ -171,11 +183,11 @@
   "key": "tests.test_settings.test_default_currency",
   "status": "flaky",
   "severity": "medium",
-  "observations": 3,
+  "observations": 4,
   "failures": 1,
-  "flaky_observations": 3,
+  "flaky_observations": 4,
   "flaky_failures": 1,
-  "failure_rate": 0.3333,
+  "failure_rate": 0.25,
   "flips": 1,
   "retry_flakes": 1,
   "main_failures": 1,
@@ -185,7 +197,8 @@
   ],
   "flaky_runs": [
    0,
-   1
+   1,
+   2
   ],
   "first_flaky_failure": {
    "index": 0,
@@ -223,14 +236,14 @@
    "run_attempt": 1
   },
   "last_seen": {
-   "index": 1,
-   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
-   "timestamp": "2026-10-22T18:06:03Z",
+   "index": 2,
+   "sha": "f1831d10a38d31f5b26c3f6a90394208bbd793a2",
+   "timestamp": "2026-10-22T20:59:19Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39828374317",
+   "run_id": "39853467004",
    "run_attempt": 1
   },
   "timeline": [
@@ -246,6 +259,11 @@
    ],
    [
     1,
+    0,
+    "passed"
+   ],
+   [
+    2,
     0,
     "passed"
    ]
@@ -255,11 +273,11 @@
   "key": "tests.test_storage.test_write_and_read_back",
   "status": "flaky",
   "severity": "medium",
-  "observations": 3,
+  "observations": 4,
   "failures": 1,
-  "flaky_observations": 3,
+  "flaky_observations": 4,
   "flaky_failures": 1,
-  "failure_rate": 0.3333,
+  "failure_rate": 0.25,
   "flips": 1,
   "retry_flakes": 1,
   "main_failures": 1,
@@ -269,7 +287,8 @@
   ],
   "flaky_runs": [
    0,
-   1
+   1,
+   2
   ],
   "first_flaky_failure": {
    "index": 0,
@@ -307,14 +326,14 @@
    "run_attempt": 1
   },
   "last_seen": {
-   "index": 1,
-   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
-   "timestamp": "2026-10-22T18:06:03Z",
+   "index": 2,
+   "sha": "f1831d10a38d31f5b26c3f6a90394208bbd793a2",
+   "timestamp": "2026-10-22T20:59:19Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39828374317",
+   "run_id": "39853467004",
    "run_attempt": 1
   },
   "timeline": [
@@ -332,6 +351,11 @@
     1,
     0,
     "passed"
+   ],
+   [
+    2,
+    0,
+    "passed"
    ]
   ]
  },
@@ -339,8 +363,8 @@
   "key": "tests.test_stats.test_mean_of_high_readings",
   "status": "failing",
   "severity": null,
-  "observations": 4,
-  "failures": 4,
+  "observations": 6,
+  "failures": 6,
   "flaky_observations": 0,
   "flaky_failures": 0,
   "failure_rate": 0.0,
@@ -365,25 +389,25 @@
    "run_attempt": 1
   },
   "last_failure": {
-   "index": 1,
-   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
-   "timestamp": "2026-10-22T18:06:03Z",
+   "index": 2,
+   "sha": "f1831d10a38d31f5b26c3f6a90394208bbd793a2",
+   "timestamp": "2026-10-22T20:59:19Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39828374317",
+   "run_id": "39853467004",
    "run_attempt": 1
   },
   "last_seen": {
-   "index": 1,
-   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
-   "timestamp": "2026-10-22T18:06:03Z",
+   "index": 2,
+   "sha": "f1831d10a38d31f5b26c3f6a90394208bbd793a2",
+   "timestamp": "2026-10-22T20:59:19Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39828374317",
+   "run_id": "39853467004",
    "run_attempt": 1
   },
   "timeline": [
@@ -404,6 +428,16 @@
    ],
    [
     1,
+    1,
+    "failed"
+   ],
+   [
+    2,
+    0,
+    "failed"
+   ],
+   [
+    2,
     1,
     "failed"
    ]

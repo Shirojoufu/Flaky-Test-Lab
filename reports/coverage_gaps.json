@@ -1,16 +1,16 @@
 {
  "available": true,
- "run_index": 1,
- "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
- "percent": 89.52,
+ "run_index": 2,
+ "sha": "f1831d10a38d31f5b26c3f6a90394208bbd793a2",
+ "percent": 88.71,
  "statements": 248,
- "covered": 222,
+ "covered": 220,
  "threshold": 80.0,
  "baseline": {
-  "run_index": 0,
-  "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
-  "percent": 84.27,
-  "delta": 5.25
+  "run_index": 1,
+  "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
+  "percent": 89.52,
+  "delta": -0.81
  },
  "below_threshold": [
   {

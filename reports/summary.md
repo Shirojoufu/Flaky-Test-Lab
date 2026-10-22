@@ -1,14 +1,13 @@
 # Flaky test report
 
-**Runs analysed:** 2 (2 on main, 0 from pull requests) · **Tests tracked:** 19 · **Flaky:** 4 (🔴 0 critical, 🟠 0 high, 🟡 4 medium, ⚪ 0 low) · **Consistently failing:** 1
+**Runs analysed:** 3 (3 on main, 0 from pull requests) · **Tests tracked:** 19 · **Flaky:** 4 (🔴 0 critical, 🟠 0 high, 🟡 4 medium, ⚪ 0 low) · **Consistently failing:** 1
 
 ## This run
 
-main · commit `2a9f247` · Pin detector to fcbe75aeca9ff191a0e95997efad479666029852
+main · commit `f1831d1` · Bump flaky test detector to 4d866f2
 
 | Test | Verdict | Severity | Message |
 | --- | --- | --- | --- |
-| `tests.test_bank.test_concurrent_deposits_are_not_lost` | 🔁 flaky: failed, then passed on retry | 🟡 medium | assert 51 == 400  +  where 51 = <lab.bank.Account object at 0x7fb78eee7fb0>.balance |
 | `tests.test_stats.test_mean_of_high_readings` | ❌ failure: no evidence of flakiness, likely a real failure |  | ZeroDivisionError: division by zero |
 
 ## Flaky tests
@@ -17,10 +16,10 @@ A test is flaky when it passed and failed on identical code (same test, conftest
 
 | Severity | Test | Fail rate | Flips | Broke main | First flaky failure | Flaky code since | Last failure |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 🟡 medium | `tests.test_bank.test_concurrent_deposits_are_not_lost` | 33% (1/3) | 2 | 1 | `2a9f247` main 2026-10-22 | `937d939` main 2026-10-22 (oldest run in history) | `2a9f247` main 2026-10-22 |
-| 🟡 medium | `tests.test_service.test_call_right_after_start` | 33% (1/3) | 1 | 1 | `937d939` main 2026-10-22 | `937d939` main 2026-10-22 (oldest run in history) | `937d939` main 2026-10-22 |
-| 🟡 medium | `tests.test_settings.test_default_currency` | 33% (1/3) | 1 | 1 | `937d939` main 2026-10-22 | `937d939` main 2026-10-22 (oldest run in history) | `937d939` main 2026-10-22 |
-| 🟡 medium | `tests.test_storage.test_write_and_read_back` | 33% (1/3) | 1 | 1 | `937d939` main 2026-10-22 | `937d939` main 2026-10-22 (oldest run in history) | `937d939` main 2026-10-22 |
+| 🟡 medium | `tests.test_bank.test_concurrent_deposits_are_not_lost` | 25% (1/4) | 2 | 1 | `2a9f247` main 2026-10-22 | `937d939` main 2026-10-22 (oldest run in history) | `2a9f247` main 2026-10-22 |
+| 🟡 medium | `tests.test_service.test_call_right_after_start` | 25% (1/4) | 1 | 1 | `937d939` main 2026-10-22 | `937d939` main 2026-10-22 (oldest run in history) | `937d939` main 2026-10-22 |
+| 🟡 medium | `tests.test_settings.test_default_currency` | 25% (1/4) | 1 | 1 | `937d939` main 2026-10-22 | `937d939` main 2026-10-22 (oldest run in history) | `937d939` main 2026-10-22 |
+| 🟡 medium | `tests.test_storage.test_write_and_read_back` | 25% (1/4) | 1 | 1 | `937d939` main 2026-10-22 | `937d939` main 2026-10-22 (oldest run in history) | `937d939` main 2026-10-22 |
 
 ## Consistently failing tests
 
@@ -28,37 +27,47 @@ These fail on their current code and have never passed on it: likely real breaka
 
 | Test | Failing since | Failures |
 | --- | --- | --- |
-| `tests.test_stats.test_mean_of_high_readings` | `937d939` main 2026-10-22 | 4 |
+| `tests.test_stats.test_mean_of_high_readings` | `937d939` main 2026-10-22 | 6 |
 
 ## Trends
 
 ```mermaid
 xychart-beta
-    title "First-attempt pass rate (%), last 2 runs"
-    x-axis ["937d939", "2a9f247"]
+    title "First-attempt pass rate (%), last 3 runs"
+    x-axis "Run" [1, 2, 3]
     y-axis "Pass rate" 0 --> 100
-    line [78.95, 89.47]
+    line [78.95, 89.47, 94.74]
 ```
 
 ```mermaid
 xychart-beta
-    title "Flaky failures per run, last 2 runs"
-    x-axis ["937d939", "2a9f247"]
+    title "Flaky failures per run, last 3 runs"
+    x-axis "Run" [1, 2, 3]
     y-axis "Flaky failures" 0 --> 3
-    bar [3, 1]
+    bar [3, 1, 0]
 ```
 
 ```mermaid
 xychart-beta
-    title "Line coverage (%), last 2 runs"
-    x-axis ["937d939", "2a9f247"]
+    title "Line coverage (%), last 3 runs"
+    x-axis "Run" [1, 2, 3]
     y-axis "Coverage" 0 --> 100
-    line [84.27, 89.52]
+    line [84.27, 89.52, 88.71]
 ```
+
+<details><summary>Run key</summary>
+
+| Run | Commit | Where | Date |
+| --- | --- | --- | --- |
+| 1 | `937d939` | main | 2026-10-22 |
+| 2 | `2a9f247` | main | 2026-10-22 |
+| 3 | `f1831d1` | main | 2026-10-22 |
+
+</details>
 
 ## Coverage
 
-**Total:** 89.52% of 248 statements (+5.25 vs main at `937d939`)
+**Total:** 88.71% of 248 statements (-0.81 vs main at `2a9f247`)
 
 ### Files no test executes
 
