@@ -1,5 +1,102 @@
 [
  {
+  "key": "tests.test_quotes.test_fetch_quote [PST]",
+  "status": "flaky",
+  "severity": "high",
+  "observations": 4,
+  "failures": 2,
+  "flaky_observations": 4,
+  "flaky_failures": 2,
+  "failure_rate": 0.5,
+  "flips": 3,
+  "retry_flakes": 2,
+  "main_failures": 2,
+  "active": true,
+  "flaky_fingerprints": [
+   "15eb9bfefc2f3a429525"
+  ],
+  "flaky_runs": [
+   4,
+   6
+  ],
+  "first_flaky_failure": {
+   "index": 4,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "PST"
+  },
+  "introduced_in": {
+   "index": 4,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "PST"
+  },
+  "previous_code_seen_in": null,
+  "failing_since": null,
+  "fixed_in": null,
+  "possibly_fixed_in": null,
+  "passes_since_fix": 0,
+  "passes_needed": 0,
+  "last_failure": {
+   "index": 6,
+   "sha": "2fc446bcac17a2b694f5bf3c6da32bbe4283df63",
+   "timestamp": "2026-10-22T21:49:01Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39860224116",
+   "run_attempt": 1,
+   "environment": "PST"
+  },
+  "last_seen": {
+   "index": 6,
+   "sha": "2fc446bcac17a2b694f5bf3c6da32bbe4283df63",
+   "timestamp": "2026-10-22T21:49:01Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39860224116",
+   "run_attempt": 1,
+   "environment": "PST"
+  },
+  "timeline": [
+   [
+    4,
+    0,
+    "failed"
+   ],
+   [
+    4,
+    1,
+    "passed"
+   ],
+   [
+    6,
+    0,
+    "failed"
+   ],
+   [
+    6,
+    1,
+    "passed"
+   ]
+  ]
+ },
+ {
   "key": "tests.test_settings.test_default_currency",
   "status": "flaky",
   "severity": "high",
@@ -109,92 +206,6 @@
   ]
  },
  {
-  "key": "tests.test_quotes.test_fetch_quote [PST]",
-  "status": "flaky",
-  "severity": "medium",
-  "observations": 2,
-  "failures": 1,
-  "flaky_observations": 2,
-  "flaky_failures": 1,
-  "failure_rate": 0.5,
-  "flips": 1,
-  "retry_flakes": 1,
-  "main_failures": 1,
-  "active": true,
-  "flaky_fingerprints": [
-   "15eb9bfefc2f3a429525"
-  ],
-  "flaky_runs": [
-   4
-  ],
-  "first_flaky_failure": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
-   "event": "push",
-   "ref": "refs/heads/main",
-   "pr_number": null,
-   "merged_pr": null,
-   "run_id": "39859211928",
-   "run_attempt": 1,
-   "environment": "PST"
-  },
-  "introduced_in": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
-   "event": "push",
-   "ref": "refs/heads/main",
-   "pr_number": null,
-   "merged_pr": null,
-   "run_id": "39859211928",
-   "run_attempt": 1,
-   "environment": "PST"
-  },
-  "previous_code_seen_in": null,
-  "failing_since": null,
-  "fixed_in": null,
-  "possibly_fixed_in": null,
-  "passes_since_fix": 0,
-  "passes_needed": 0,
-  "last_failure": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
-   "event": "push",
-   "ref": "refs/heads/main",
-   "pr_number": null,
-   "merged_pr": null,
-   "run_id": "39859211928",
-   "run_attempt": 1,
-   "environment": "PST"
-  },
-  "last_seen": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
-   "event": "push",
-   "ref": "refs/heads/main",
-   "pr_number": null,
-   "merged_pr": null,
-   "run_id": "39859211928",
-   "run_attempt": 1,
-   "environment": "PST"
-  },
-  "timeline": [
-   [
-    4,
-    0,
-    "failed"
-   ],
-   [
-    4,
-    1,
-    "passed"
-   ]
-  ]
- },
- {
   "key": "tests.test_service.test_call_right_after_start [UTC]",
   "status": "flaky",
   "severity": "medium",
@@ -275,92 +286,6 @@
    ],
    [
     5,
-    1,
-    "passed"
-   ]
-  ]
- },
- {
-  "key": "tests.test_settings.test_default_currency [PST]",
-  "status": "flaky",
-  "severity": "medium",
-  "observations": 2,
-  "failures": 1,
-  "flaky_observations": 2,
-  "flaky_failures": 1,
-  "failure_rate": 0.5,
-  "flips": 1,
-  "retry_flakes": 1,
-  "main_failures": 1,
-  "active": true,
-  "flaky_fingerprints": [
-   "c731e371b8c5f80af642"
-  ],
-  "flaky_runs": [
-   4
-  ],
-  "first_flaky_failure": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
-   "event": "push",
-   "ref": "refs/heads/main",
-   "pr_number": null,
-   "merged_pr": null,
-   "run_id": "39859211928",
-   "run_attempt": 1,
-   "environment": "PST"
-  },
-  "introduced_in": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
-   "event": "push",
-   "ref": "refs/heads/main",
-   "pr_number": null,
-   "merged_pr": null,
-   "run_id": "39859211928",
-   "run_attempt": 1,
-   "environment": "PST"
-  },
-  "previous_code_seen_in": null,
-  "failing_since": null,
-  "fixed_in": null,
-  "possibly_fixed_in": null,
-  "passes_since_fix": 0,
-  "passes_needed": 0,
-  "last_failure": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
-   "event": "push",
-   "ref": "refs/heads/main",
-   "pr_number": null,
-   "merged_pr": null,
-   "run_id": "39859211928",
-   "run_attempt": 1,
-   "environment": "PST"
-  },
-  "last_seen": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
-   "event": "push",
-   "ref": "refs/heads/main",
-   "pr_number": null,
-   "merged_pr": null,
-   "run_id": "39859211928",
-   "run_attempt": 1,
-   "environment": "PST"
-  },
-  "timeline": [
-   [
-    4,
-    0,
-    "failed"
-   ],
-   [
-    4,
     1,
     "passed"
    ]
@@ -448,6 +373,98 @@
    [
     5,
     1,
+    "passed"
+   ]
+  ]
+ },
+ {
+  "key": "tests.test_settings.test_default_currency [PST]",
+  "status": "flaky",
+  "severity": "medium",
+  "observations": 3,
+  "failures": 1,
+  "flaky_observations": 3,
+  "flaky_failures": 1,
+  "failure_rate": 0.3333,
+  "flips": 1,
+  "retry_flakes": 1,
+  "main_failures": 1,
+  "active": true,
+  "flaky_fingerprints": [
+   "c731e371b8c5f80af642"
+  ],
+  "flaky_runs": [
+   4,
+   6
+  ],
+  "first_flaky_failure": {
+   "index": 4,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "PST"
+  },
+  "introduced_in": {
+   "index": 4,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "PST"
+  },
+  "previous_code_seen_in": null,
+  "failing_since": null,
+  "fixed_in": null,
+  "possibly_fixed_in": null,
+  "passes_since_fix": 0,
+  "passes_needed": 0,
+  "last_failure": {
+   "index": 4,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "PST"
+  },
+  "last_seen": {
+   "index": 6,
+   "sha": "2fc446bcac17a2b694f5bf3c6da32bbe4283df63",
+   "timestamp": "2026-10-22T21:49:01Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39860224116",
+   "run_attempt": 1,
+   "environment": "PST"
+  },
+  "timeline": [
+   [
+    4,
+    0,
+    "failed"
+   ],
+   [
+    4,
+    1,
+    "passed"
+   ],
+   [
+    6,
+    0,
     "passed"
    ]
   ]
@@ -570,7 +587,7 @@
   "main_failures": 1,
   "active": true,
   "flaky_fingerprints": [
-   "562963d61cbe04b91a90"
+   "95419d14576af28e5a0c"
   ],
   "flaky_runs": [
    0,
@@ -973,8 +990,8 @@
   "key": "tests.test_reports.test_report_date_early_morning [PST]",
   "status": "failing",
   "severity": null,
-  "observations": 2,
-  "failures": 2,
+  "observations": 4,
+  "failures": 4,
   "flaky_observations": 0,
   "flaky_failures": 0,
   "failure_rate": 0.0,
@@ -1004,26 +1021,26 @@
   "passes_since_fix": 0,
   "passes_needed": 0,
   "last_failure": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
+   "index": 6,
+   "sha": "2fc446bcac17a2b694f5bf3c6da32bbe4283df63",
+   "timestamp": "2026-10-22T21:49:01Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39859211928",
+   "run_id": "39860224116",
    "run_attempt": 1,
    "environment": "PST"
   },
   "last_seen": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
+   "index": 6,
+   "sha": "2fc446bcac17a2b694f5bf3c6da32bbe4283df63",
+   "timestamp": "2026-10-22T21:49:01Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39859211928",
+   "run_id": "39860224116",
    "run_attempt": 1,
    "environment": "PST"
   },
@@ -1037,6 +1054,16 @@
     4,
     1,
     "failed"
+   ],
+   [
+    6,
+    0,
+    "failed"
+   ],
+   [
+    6,
+    1,
+    "failed"
    ]
   ]
  },
@@ -1044,8 +1071,8 @@
   "key": "tests.test_stats.test_mean_of_high_readings [PST]",
   "status": "failing",
   "severity": null,
-  "observations": 2,
-  "failures": 2,
+  "observations": 4,
+  "failures": 4,
   "flaky_observations": 0,
   "flaky_failures": 0,
   "failure_rate": 0.0,
@@ -1075,26 +1102,26 @@
   "passes_since_fix": 0,
   "passes_needed": 0,
   "last_failure": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
+   "index": 6,
+   "sha": "2fc446bcac17a2b694f5bf3c6da32bbe4283df63",
+   "timestamp": "2026-10-22T21:49:01Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39859211928",
+   "run_id": "39860224116",
    "run_attempt": 1,
    "environment": "PST"
   },
   "last_seen": {
-   "index": 4,
-   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-   "timestamp": "2026-10-22T21:41:15Z",
+   "index": 6,
+   "sha": "2fc446bcac17a2b694f5bf3c6da32bbe4283df63",
+   "timestamp": "2026-10-22T21:49:01Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39859211928",
+   "run_id": "39860224116",
    "run_attempt": 1,
    "environment": "PST"
   },
@@ -1106,6 +1133,16 @@
    ],
    [
     4,
+    1,
+    "failed"
+   ],
+   [
+    6,
+    0,
+    "failed"
+   ],
+   [
+    6,
     1,
     "failed"
    ]

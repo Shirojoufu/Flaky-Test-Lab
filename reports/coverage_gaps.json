@@ -1,16 +1,16 @@
 {
  "available": true,
- "run_index": 5,
- "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
- "percent": 86.83,
+ "run_index": 6,
+ "sha": "2fc446bcac17a2b694f5bf3c6da32bbe4283df63",
+ "percent": 89.32,
  "statements": 281,
- "covered": 244,
+ "covered": 251,
  "threshold": 80.0,
  "baseline": {
-  "run_index": 4,
+  "run_index": 5,
   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
-  "percent": 88.61,
-  "delta": -1.78
+  "percent": 86.83,
+  "delta": 2.49
  },
  "below_threshold": [
   {
@@ -40,55 +40,16 @@
      22
     ]
    ]
-  },
-  {
-   "file": "lab/service.py",
-   "percent": 68.57,
-   "statements": 35,
-   "covered": 24,
-   "missing": [
-    [
-     35,
-     43
-    ],
-    [
-     50,
-     51
-    ]
-   ]
   }
  ],
  "never_executed": [
   "lab/node.py"
  ],
  "diff": {
-  "changed_statements": 33,
-  "covered": 32,
-  "files": {
-   "lab/ids.py": {
-    "changed_statements": 19,
-    "covered": 18,
-    "uncovered": [
-     [
-      31,
-      31
-     ]
-    ]
-   },
-   "lab/rates.py": {
-    "changed_statements": 7,
-    "covered": 7,
-    "uncovered": []
-   },
-   "lab/reports.py": {
-    "changed_statements": 7,
-    "covered": 7,
-    "uncovered": []
-   }
-  },
-  "percent": 96.97,
-  "unmeasured_files": [
-   "sim/simulate.py"
-  ]
+  "changed_statements": 0,
+  "covered": 0,
+  "files": {},
+  "percent": null,
+  "unmeasured_files": []
  }
 }
