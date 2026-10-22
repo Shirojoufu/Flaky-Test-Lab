@@ -6,3 +6,4 @@ index,sha,timestamp,event,ref,pr_number,merged_pr,run_id,run_attempt,environment
 4,fa0888360b10432bae0bbb86ebccdd5d3bd52f07,2026-10-22T21:41:15Z,push,refs/heads/main,,,39859211928,1,PST,True,22,18,4,0,2,2,81.82,88.61,96.97
 5,fa0888360b10432bae0bbb86ebccdd5d3bd52f07,2026-10-22T21:41:15Z,push,refs/heads/main,,,39859211928,1,UTC,True,22,20,2,0,0,2,90.91,86.83,96.97
 6,2fc446bcac17a2b694f5bf3c6da32bbe4283df63,2026-10-22T21:49:01Z,push,refs/heads/main,,,39860224116,1,PST,True,22,19,3,0,2,1,86.36,89.32,
+7,2fc446bcac17a2b694f5bf3c6da32bbe4283df63,2026-10-22T21:49:07Z,push,refs/heads/main,,,39860224116,1,UTC,True,22,19,3,0,2,3,86.36,88.97,

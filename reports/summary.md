@@ -1,6 +1,6 @@
 # Flaky test report
 
-**Runs analysed:** 7 (7 on main, 0 from pull requests) · **Tests tracked:** 63 · **Flaky:** 9 (🔴 0 critical, 🟠 2 high, 🟡 7 medium, ⚪ 0 low) · **Consistently failing:** 3 · **Fixed flakes:** 0
+**Runs analysed:** 8 (8 on main, 0 from pull requests) · **Tests tracked:** 63 · **Flaky:** 10 (🔴 1 critical, 🟠 4 high, 🟡 5 medium, ⚪ 0 low) · **Consistently failing:** 3 · **Fixed flakes:** 0
 
 ## This run
 
@@ -8,9 +8,9 @@ main · commit `2fc446b` · Note detector version on its pin
 
 | Test | Verdict | Severity | Message |
 | --- | --- | --- | --- |
-| `tests.test_quotes.test_fetch_quote [PST]` | 🔁 flaky: failed, then passed on retry | 🟠 high | TimeoutError: timed out |
-| `tests.test_reports.test_report_date_early_morning [PST]` | ❌ failure: no evidence of flakiness, likely a real failure |  | AssertionError: assert '2026-02-28' == '2026-03-01'      - 2026-03-01   + 2026-02-28 |
-| `tests.test_stats.test_mean_of_high_readings [PST]` | ❌ failure: no evidence of flakiness, likely a real failure |  | ZeroDivisionError: division by zero |
+| `tests.test_bank.test_concurrent_deposits_are_not_lost [UTC]` | ⚠️ known flaky: failed on code where it has also passed | 🟠 high | assert 52 == 400  +  where 52 = <lab.bank.Account object at 0x7f0d042e4830>.balance |
+| `tests.test_service.test_call_right_after_start [UTC]` | 🔁 flaky: failed, then passed on retry | 🟠 high | ConnectionRefusedError: [Errno 111] Connection refused |
+| `tests.test_stats.test_mean_of_high_readings [UTC]` | ⚠️ known flaky: failed on code where it has also passed | 🔴 critical | ZeroDivisionError: division by zero |
 
 ## Flaky tests
 
@@ -18,10 +18,11 @@ A test is flaky when it passed and failed on identical code (same test, conftest
 
 | Severity | Test | Fail rate | Flips | Broke main | First flaky failure | Flaky code since | Last failure |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| 🔴 critical | `tests.test_stats.test_mean_of_high_readings [UTC]` | 75% (3/4) | 2 | 2 | `fa08883` main 2026-10-22 | `fa08883` main 2026-10-22 (oldest run in history) | `2fc446b` main 2026-10-22 |
+| 🟠 high | `tests.test_bank.test_concurrent_deposits_are_not_lost [UTC]` | 67% (2/3) | 1 | 1 | `2fc446b` main 2026-10-22 | `fa08883` main 2026-10-22 (oldest run in history) | `2fc446b` main 2026-10-22 |
 | 🟠 high | `tests.test_quotes.test_fetch_quote [PST]` | 50% (2/4) | 3 | 2 | `fa08883` main 2026-10-22 | `fa08883` main 2026-10-22 (oldest run in history) | `2fc446b` main 2026-10-22 |
+| 🟠 high | `tests.test_service.test_call_right_after_start [UTC]` | 50% (2/4) | 3 | 2 | `fa08883` main 2026-10-22 | `fa08883` main 2026-10-22 (oldest run in history) | `2fc446b` main 2026-10-22 |
 | 🟠 high | `tests.test_settings.test_default_currency` | 33% (2/6) | 3 | 2 | `937d939` main 2026-10-22 | `937d939` main 2026-10-22 (oldest run in history) | `f1831d1` main (schedule) 2026-10-22 |
-| 🟡 medium | `tests.test_service.test_call_right_after_start [UTC]` | 50% (1/2) | 1 | 1 | `fa08883` main 2026-10-22 | `fa08883` main 2026-10-22 (oldest run in history) | `fa08883` main 2026-10-22 |
-| 🟡 medium | `tests.test_stats.test_mean_of_high_readings [UTC]` | 50% (1/2) | 1 | 1 | `fa08883` main 2026-10-22 | `fa08883` main 2026-10-22 (oldest run in history) | `fa08883` main 2026-10-22 |
 | 🟡 medium | `tests.test_settings.test_default_currency [PST]` | 33% (1/3) | 1 | 1 | `fa08883` main 2026-10-22 | `fa08883` main 2026-10-22 (oldest run in history) | `fa08883` main 2026-10-22 |
 | 🟡 medium | `tests.test_bank.test_concurrent_deposits_are_not_lost` | 20% (1/5) | 2 | 1 | `2a9f247` main 2026-10-22 | `937d939` main 2026-10-22 (oldest run in history) | `2a9f247` main 2026-10-22 |
 | 🟡 medium | `tests.test_cluster.test_map_across_nodes` | 20% (1/5) | 2 | 1 | `f1831d1` main (schedule) 2026-10-22 | `937d939` main 2026-10-22 (oldest run in history) | `f1831d1` main (schedule) 2026-10-22 |
@@ -42,26 +43,26 @@ These fail on their current code and have never passed on it: likely real breaka
 
 ```mermaid
 xychart-beta
-    title "First-attempt pass rate (%), last 7 runs"
-    x-axis "Run" [1, 2, 3, 4, 5, 6, 7]
+    title "First-attempt pass rate (%), last 8 runs"
+    x-axis "Run" [1, 2, 3, 4, 5, 6, 7, 8]
     y-axis "Pass rate" 0 --> 100
-    line [78.95, 89.47, 94.74, 84.21, 81.82, 90.91, 86.36]
+    line [78.95, 89.47, 94.74, 84.21, 81.82, 90.91, 86.36, 86.36]
 ```
 
 ```mermaid
 xychart-beta
-    title "Flaky failures per run, last 7 runs"
-    x-axis "Run" [1, 2, 3, 4, 5, 6, 7]
+    title "Flaky failures per run, last 8 runs"
+    x-axis "Run" [1, 2, 3, 4, 5, 6, 7, 8]
     y-axis "Flaky failures" 0 --> 3
-    bar [3, 1, 0, 2, 2, 2, 1]
+    bar [3, 1, 0, 2, 2, 2, 1, 3]
 ```
 
 ```mermaid
 xychart-beta
-    title "Line coverage (%), last 7 runs"
-    x-axis "Run" [1, 2, 3, 4, 5, 6, 7]
+    title "Line coverage (%), last 8 runs"
+    x-axis "Run" [1, 2, 3, 4, 5, 6, 7, 8]
     y-axis "Coverage" 0 --> 100
-    line [84.27, 89.52, 88.71, 90.73, 88.61, 86.83, 89.32]
+    line [84.27, 89.52, 88.71, 90.73, 88.61, 86.83, 89.32, 88.97]
 ```
 
 <details><summary>Run key</summary>
@@ -75,12 +76,13 @@ xychart-beta
 | 5 | `fa08883` | main | 2026-10-22 |
 | 6 | `fa08883` | main | 2026-10-22 |
 | 7 | `2fc446b` | main | 2026-10-22 |
+| 8 | `2fc446b` | main | 2026-10-22 |
 
 </details>
 
 ## Coverage
 
-**Total:** 89.32% of 281 statements (+2.49 vs main at `fa08883`)
+**Total:** 88.97% of 281 statements (-0.35 vs main at `2fc446b`)
 
 ### Files no test executes
 
