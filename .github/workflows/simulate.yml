@@ -31,7 +31,7 @@ jobs:
       - name: Install
         run: >
           pip install -e ".[test]"
-          "flaky-detector @ git+https://github.com/Shirojoufu/Flaky-Tests@fcbe75aeca9ff191a0e95997efad479666029852"
+          "flaky-detector @ git+https://github.com/Shirojoufu/Flaky-Tests@4d866f2c8023d510787af5defd2fac8305f5b800"
 
       - name: Simulate and validate
         env:
