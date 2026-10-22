@@ -1,0 +1,46 @@
+name: Validate the detector
+
+# Replays 30 CI runs (PRs and merges, scripted code changes, a different chaos seed each run)
+# and checks the detector classifies every test correctly. Fails if any test is misclassified.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      runs:
+        description: Number of CI runs to simulate
+        default: "30"
+
+permissions:
+  contents: read
+
+jobs:
+  simulate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: >
+          pip install -e ".[test]"
+          "flaky-detector @ git+https://github.com/Shirojoufu/Flaky-Tests@37ca78a3959e802e362131ebdd7720db4f1ec757"
+
+      - name: Simulate and validate
+        env:
+          RUNS: ${{ inputs.runs || '30' }}
+        run: python sim/simulate.py --runs "$RUNS" --out sim-output --summary-file "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload history, report and graph data
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: simulation-${{ github.run_id }}
+          path: sim-output

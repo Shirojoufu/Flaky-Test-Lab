@@ -1,0 +1,56 @@
+name: CI with flaky test detection
+
+# Every run draws a fresh chaos seed, so this builds up a real flaky history on the
+# flaky-data branch. The schedule keeps it growing between pushes.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write  # the detector pushes run records to the flaky-data branch
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -e ".[test]"
+
+      - name: Test
+        id: tests
+        continue-on-error: true
+        run: >
+          pytest -v
+          --junitxml=.flaky/junit.xml
+          --cov --cov-context=test --cov-report=term
+          --cov-report=json:.flaky/coverage.json
+
+      - name: Retry failed tests
+        if: steps.tests.outcome == 'failure'
+        continue-on-error: true
+        run: pytest -v --last-failed --no-cov --junitxml=.flaky/junit-retry-1.xml
+
+      # This repo exists to be flaky, so failures don't fail the job: the report is the point.
+      - name: Detect flaky tests
+        if: always() && steps.tests.outcome != 'skipped'
+        uses: Shirojoufu/Flaky-Tests@37ca78a3959e802e362131ebdd7720db4f1ec757
+        with:
+          junit: .flaky/junit.xml
+          retry-junit: .flaky/junit-retry-*.xml
+          coverage: .flaky/coverage.json
+          fingerprint-extra: lab/node.py  # runs in worker subprocesses, which coverage doesn't see
+          python: python

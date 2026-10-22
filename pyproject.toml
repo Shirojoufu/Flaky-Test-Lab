@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["lab*"]
+
+[project]
+name = "flaky-test-lab"
+version = "0.1.0"
+description = "Tests that fail for every common flaky reason, and a simulator that proves the detector catches them."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8", "pytest-cov>=5"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+source = ["lab", "tests"]
+relative_files = true
+# Per-test contexts are incomplete with the sys.monitoring core that Python 3.14+ defaults to.
+core = "ctrace"
+
+[tool.coverage.json]
+show_contexts = true
