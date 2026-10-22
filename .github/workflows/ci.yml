@@ -17,6 +17,14 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-24.04
+    # Two timezones: test_reports fails only in PST, which the detector must call a real
+    # environment-specific failure, not a flake.
+    strategy:
+      fail-fast: false
+      matrix:
+        tz: [UTC, PST]
+    env:
+      LAB_TZ: ${{ matrix.tz }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -47,10 +55,12 @@ jobs:
       # This repo exists to be flaky, so failures don't fail the job: the report is the point.
       - name: Detect flaky tests
         if: always() && steps.tests.outcome != 'skipped'
-        uses: Shirojoufu/Flaky-Tests@4d866f2c8023d510787af5defd2fac8305f5b800
+        uses: Shirojoufu/Flaky-Tests@ec75748fc1a393599e37fe60872e412d57e89ae8
         with:
           junit: .flaky/junit.xml
           retry-junit: .flaky/junit-retry-*.xml
           coverage: .flaky/coverage.json
-          fingerprint-extra: lab/node.py  # runs in worker subprocesses, which coverage doesn't see
+          environment: ${{ matrix.tz }}
+          # Worker subprocess code and data files: tests depend on them, but coverage can't see them.
+          fingerprint-extra: lab/node.py lab/data/*.json
           python: python
