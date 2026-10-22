@@ -1,17 +1,17 @@
 file,statements,covered,percent,missing
 lab/__init__.py,0,0,100.0,
-lab/bank.py,12,11,91.67,20
+lab/bank.py,12,12,100.0,
 lab/chaos.py,10,10,100.0,
 lab/cluster.py,43,38,88.37,"42-43, 45, 53-54"
 lab/currency.py,4,4,100.0,
 lab/events.py,14,14,100.0,
-lab/inventory.py,21,20,95.24,27
+lab/inventory.py,21,21,100.0,
 lab/node.py,14,0,0.0,"3, 5-7, 9, 12-18, 21-22"
 lab/pricing.py,3,3,100.0,
 lab/quotes.py,37,35,94.59,38-39
-lab/service.py,35,24,68.57,"35-43, 50-51"
+lab/service.py,35,33,94.29,40-41
 lab/settings.py,7,7,100.0,
 lab/stats.py,5,5,100.0,
-lab/storage.py,27,23,85.19,30-33
+lab/storage.py,27,25,92.59,"19, 37"
 lab/text.py,8,8,100.0,
 lab/timing.py,8,7,87.5,15

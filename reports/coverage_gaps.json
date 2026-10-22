@@ -1,12 +1,17 @@
 {
  "available": true,
- "run_index": 0,
- "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
- "percent": 84.27,
+ "run_index": 1,
+ "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
+ "percent": 89.52,
  "statements": 248,
- "covered": 209,
+ "covered": 222,
  "threshold": 80.0,
- "baseline": null,
+ "baseline": {
+  "run_index": 0,
+  "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+  "percent": 84.27,
+  "delta": 5.25
+ },
  "below_threshold": [
   {
    "file": "lab/node.py",
@@ -35,26 +40,16 @@
      22
     ]
    ]
-  },
-  {
-   "file": "lab/service.py",
-   "percent": 68.57,
-   "statements": 35,
-   "covered": 24,
-   "missing": [
-    [
-     35,
-     43
-    ],
-    [
-     50,
-     51
-    ]
-   ]
   }
  ],
  "never_executed": [
   "lab/node.py"
  ],
- "diff": null
+ "diff": {
+  "changed_statements": 0,
+  "covered": 0,
+  "files": {},
+  "percent": null,
+  "unmeasured_files": []
+ }
 }

@@ -1,13 +1,97 @@
 [
  {
+  "key": "tests.test_bank.test_concurrent_deposits_are_not_lost",
+  "status": "flaky",
+  "severity": "medium",
+  "observations": 3,
+  "failures": 1,
+  "flaky_observations": 3,
+  "flaky_failures": 1,
+  "failure_rate": 0.3333,
+  "flips": 2,
+  "retry_flakes": 1,
+  "main_failures": 1,
+  "active": true,
+  "flaky_fingerprints": [
+   "b4014ed7824fc3eac3e7"
+  ],
+  "flaky_runs": [
+   0,
+   1
+  ],
+  "first_flaky_failure": {
+   "index": 1,
+   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
+   "timestamp": "2026-10-22T18:06:03Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828374317",
+   "run_attempt": 1
+  },
+  "introduced_in": {
+   "index": 0,
+   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+   "timestamp": "2026-10-22T18:04:33Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828152096",
+   "run_attempt": 1
+  },
+  "previous_code_seen_in": null,
+  "failing_since": null,
+  "last_failure": {
+   "index": 1,
+   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
+   "timestamp": "2026-10-22T18:06:03Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828374317",
+   "run_attempt": 1
+  },
+  "last_seen": {
+   "index": 1,
+   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
+   "timestamp": "2026-10-22T18:06:03Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39828374317",
+   "run_attempt": 1
+  },
+  "timeline": [
+   [
+    0,
+    0,
+    "passed"
+   ],
+   [
+    1,
+    0,
+    "failed"
+   ],
+   [
+    1,
+    1,
+    "passed"
+   ]
+  ]
+ },
+ {
   "key": "tests.test_service.test_call_right_after_start",
   "status": "flaky",
   "severity": "medium",
-  "observations": 2,
+  "observations": 3,
   "failures": 1,
-  "flaky_observations": 2,
+  "flaky_observations": 3,
   "flaky_failures": 1,
-  "failure_rate": 0.5,
+  "failure_rate": 0.3333,
   "flips": 1,
   "retry_flakes": 1,
   "main_failures": 1,
@@ -16,7 +100,8 @@
    "2c86e91be0373bec1e68"
   ],
   "flaky_runs": [
-   0
+   0,
+   1
   ],
   "first_flaky_failure": {
    "index": 0,
@@ -54,14 +139,14 @@
    "run_attempt": 1
   },
   "last_seen": {
-   "index": 0,
-   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
-   "timestamp": "2026-10-22T18:04:33Z",
+   "index": 1,
+   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
+   "timestamp": "2026-10-22T18:06:03Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39828152096",
+   "run_id": "39828374317",
    "run_attempt": 1
   },
   "timeline": [
@@ -73,6 +158,11 @@
    [
     0,
     1,
+    "passed"
+   ],
+   [
+    1,
+    0,
     "passed"
    ]
   ]
@@ -81,11 +171,11 @@
   "key": "tests.test_settings.test_default_currency",
   "status": "flaky",
   "severity": "medium",
-  "observations": 2,
+  "observations": 3,
   "failures": 1,
-  "flaky_observations": 2,
+  "flaky_observations": 3,
   "flaky_failures": 1,
-  "failure_rate": 0.5,
+  "failure_rate": 0.3333,
   "flips": 1,
   "retry_flakes": 1,
   "main_failures": 1,
@@ -94,7 +184,8 @@
    "d87c8fb0d86169ce2d83"
   ],
   "flaky_runs": [
-   0
+   0,
+   1
   ],
   "first_flaky_failure": {
    "index": 0,
@@ -132,14 +223,14 @@
    "run_attempt": 1
   },
   "last_seen": {
-   "index": 0,
-   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
-   "timestamp": "2026-10-22T18:04:33Z",
+   "index": 1,
+   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
+   "timestamp": "2026-10-22T18:06:03Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39828152096",
+   "run_id": "39828374317",
    "run_attempt": 1
   },
   "timeline": [
@@ -151,6 +242,11 @@
    [
     0,
     1,
+    "passed"
+   ],
+   [
+    1,
+    0,
     "passed"
    ]
   ]
@@ -159,11 +255,11 @@
   "key": "tests.test_storage.test_write_and_read_back",
   "status": "flaky",
   "severity": "medium",
-  "observations": 2,
+  "observations": 3,
   "failures": 1,
-  "flaky_observations": 2,
+  "flaky_observations": 3,
   "flaky_failures": 1,
-  "failure_rate": 0.5,
+  "failure_rate": 0.3333,
   "flips": 1,
   "retry_flakes": 1,
   "main_failures": 1,
@@ -172,7 +268,8 @@
    "50115c6859c7f4ba7519"
   ],
   "flaky_runs": [
-   0
+   0,
+   1
   ],
   "first_flaky_failure": {
    "index": 0,
@@ -210,14 +307,14 @@
    "run_attempt": 1
   },
   "last_seen": {
-   "index": 0,
-   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
-   "timestamp": "2026-10-22T18:04:33Z",
+   "index": 1,
+   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
+   "timestamp": "2026-10-22T18:06:03Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39828152096",
+   "run_id": "39828374317",
    "run_attempt": 1
   },
   "timeline": [
@@ -230,6 +327,11 @@
     0,
     1,
     "passed"
+   ],
+   [
+    1,
+    0,
+    "passed"
    ]
   ]
  },
@@ -237,8 +339,8 @@
   "key": "tests.test_stats.test_mean_of_high_readings",
   "status": "failing",
   "severity": null,
-  "observations": 2,
-  "failures": 2,
+  "observations": 4,
+  "failures": 4,
   "flaky_observations": 0,
   "flaky_failures": 0,
   "failure_rate": 0.0,
@@ -263,25 +365,25 @@
    "run_attempt": 1
   },
   "last_failure": {
-   "index": 0,
-   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
-   "timestamp": "2026-10-22T18:04:33Z",
+   "index": 1,
+   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
+   "timestamp": "2026-10-22T18:06:03Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39828152096",
+   "run_id": "39828374317",
    "run_attempt": 1
   },
   "last_seen": {
-   "index": 0,
-   "sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
-   "timestamp": "2026-10-22T18:04:33Z",
+   "index": 1,
+   "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
+   "timestamp": "2026-10-22T18:06:03Z",
    "event": "push",
    "ref": "refs/heads/main",
    "pr_number": null,
    "merged_pr": null,
-   "run_id": "39828152096",
+   "run_id": "39828374317",
    "run_attempt": 1
   },
   "timeline": [
@@ -292,6 +394,16 @@
    ],
    [
     0,
+    1,
+    "failed"
+   ],
+   [
+    1,
+    0,
+    "failed"
+   ],
+   [
+    1,
     1,
     "failed"
    ]

@@ -1,0 +1,605 @@
+{
+ "base_sha": "937d9394f65c302d13f4b913cb6ab66183832ef0",
+ "commit_message": "Pin detector to fcbe75aeca9ff191a0e95997efad479666029852",
+ "coverage": {
+  "covered": 222,
+  "files": {
+   "lab/__init__.py": {
+    "covered": 0,
+    "missing": [],
+    "percent": 100.0,
+    "statements": 0
+   },
+   "lab/bank.py": {
+    "covered": 12,
+    "missing": [],
+    "percent": 100.0,
+    "statements": 12
+   },
+   "lab/chaos.py": {
+    "covered": 10,
+    "missing": [],
+    "percent": 100.0,
+    "statements": 10
+   },
+   "lab/cluster.py": {
+    "covered": 38,
+    "missing": [
+     [
+      42,
+      43
+     ],
+     [
+      45,
+      45
+     ],
+     [
+      53,
+      54
+     ]
+    ],
+    "percent": 88.37,
+    "statements": 43
+   },
+   "lab/currency.py": {
+    "covered": 4,
+    "missing": [],
+    "percent": 100.0,
+    "statements": 4
+   },
+   "lab/events.py": {
+    "covered": 14,
+    "missing": [],
+    "percent": 100.0,
+    "statements": 14
+   },
+   "lab/inventory.py": {
+    "covered": 21,
+    "missing": [],
+    "percent": 100.0,
+    "statements": 21
+   },
+   "lab/node.py": {
+    "covered": 0,
+    "missing": [
+     [
+      3,
+      3
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      9,
+      9
+     ],
+     [
+      12,
+      18
+     ],
+     [
+      21,
+      22
+     ]
+    ],
+    "percent": 0.0,
+    "statements": 14
+   },
+   "lab/pricing.py": {
+    "covered": 3,
+    "missing": [],
+    "percent": 100.0,
+    "statements": 3
+   },
+   "lab/quotes.py": {
+    "covered": 35,
+    "missing": [
+     [
+      38,
+      39
+     ]
+    ],
+    "percent": 94.59,
+    "statements": 37
+   },
+   "lab/service.py": {
+    "covered": 33,
+    "missing": [
+     [
+      40,
+      41
+     ]
+    ],
+    "percent": 94.29,
+    "statements": 35
+   },
+   "lab/settings.py": {
+    "covered": 7,
+    "missing": [],
+    "percent": 100.0,
+    "statements": 7
+   },
+   "lab/stats.py": {
+    "covered": 5,
+    "missing": [],
+    "percent": 100.0,
+    "statements": 5
+   },
+   "lab/storage.py": {
+    "covered": 25,
+    "missing": [
+     [
+      19,
+      19
+     ],
+     [
+      37,
+      37
+     ]
+    ],
+    "percent": 92.59,
+    "statements": 27
+   },
+   "lab/text.py": {
+    "covered": 8,
+    "missing": [],
+    "percent": 100.0,
+    "statements": 8
+   },
+   "lab/timing.py": {
+    "covered": 7,
+    "missing": [
+     [
+      15,
+      15
+     ]
+    ],
+    "percent": 87.5,
+    "statements": 8
+   }
+  },
+  "percent": 89.52,
+  "statements": 248
+ },
+ "diff_coverage": {
+  "changed_statements": 0,
+  "covered": 0,
+  "files": {},
+  "percent": null,
+  "unmeasured_files": []
+ },
+ "event": "push",
+ "files": [
+  [
+   "lab/__init__.py",
+   "37e9bf771c44"
+  ],
+  [
+   "lab/bank.py",
+   "4bf6bba2edc3"
+  ],
+  [
+   "lab/chaos.py",
+   "7bab318ac9ef"
+  ],
+  [
+   "lab/cluster.py",
+   "0ebc6e709c94"
+  ],
+  [
+   "lab/currency.py",
+   "cc3814ebe4ed"
+  ],
+  [
+   "lab/events.py",
+   "75033b96a7e8"
+  ],
+  [
+   "lab/inventory.py",
+   "63786c3bd55c"
+  ],
+  [
+   "lab/node.py",
+   "5c041b964375"
+  ],
+  [
+   "lab/pricing.py",
+   "dd54773443bf"
+  ],
+  [
+   "lab/quotes.py",
+   "2d80f9276438"
+  ],
+  [
+   "lab/service.py",
+   "f6c4c3568a9a"
+  ],
+  [
+   "lab/settings.py",
+   "920569931578"
+  ],
+  [
+   "lab/stats.py",
+   "6de42a3edf5c"
+  ],
+  [
+   "lab/storage.py",
+   "c2706a3558c8"
+  ],
+  [
+   "lab/text.py",
+   "7862efe6f1d1"
+  ],
+  [
+   "lab/timing.py",
+   "3ecaf92ef42f"
+  ],
+  [
+   "pyproject.toml",
+   "8cd7dd96b8f5"
+  ],
+  [
+   "tests/conftest.py",
+   "4e7d5546f755"
+  ],
+  [
+   "tests/test_bank.py",
+   "f7b9b7bd1013"
+  ],
+  [
+   "tests/test_cluster.py",
+   "628c4ccfa9e1"
+  ],
+  [
+   "tests/test_currency.py",
+   "3742fc2bcf5e"
+  ],
+  [
+   "tests/test_events.py",
+   "17b36eeb42a5"
+  ],
+  [
+   "tests/test_inventory.py",
+   "0a14f0f4af48"
+  ],
+  [
+   "tests/test_pricing.py",
+   "fb68a3410216"
+  ],
+  [
+   "tests/test_quotes.py",
+   "cbda3c066495"
+  ],
+  [
+   "tests/test_service.py",
+   "8a59f51f845f"
+  ],
+  [
+   "tests/test_settings.py",
+   "846a1bcee49b"
+  ],
+  [
+   "tests/test_stats.py",
+   "a50947156572"
+  ],
+  [
+   "tests/test_storage.py",
+   "ca282fe6eb6f"
+  ],
+  [
+   "tests/test_text.py",
+   "b3192e656c95"
+  ],
+  [
+   "tests/test_timing.py",
+   "32b8404c08f9"
+  ]
+ ],
+ "merged_pr": null,
+ "pr_head_ref": null,
+ "pr_head_sha": null,
+ "pr_number": null,
+ "ref": "refs/heads/main",
+ "repository": "Shirojoufu/Flaky-Test-Lab",
+ "run_attempt": 1,
+ "run_id": "39828374317",
+ "schema": 1,
+ "sha": "2a9f24715703e8d9ecb35649ea9a06f0e66c93c7",
+ "tests": {
+  "tests.test_bank.test_concurrent_deposits_are_not_lost": {
+   "attempts": [
+    "failed",
+    "passed"
+   ],
+   "deps": [
+    1,
+    7,
+    16,
+    17,
+    18
+   ],
+   "duration": 0.031,
+   "fingerprint": "b4014ed7824fc3eac3e7",
+   "fingerprint_kind": "precise",
+   "message": "assert 51 == 400\n +  where 51 = <lab.bank.Account object at 0x7fb78eee7fb0>.balance"
+  },
+  "tests.test_cluster.test_map_across_nodes": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    3,
+    7,
+    16,
+    17,
+    19
+   ],
+   "duration": 0.058,
+   "fingerprint": "9e7eab82508398c7f351",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_currency.test_euro_symbol": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    4,
+    7,
+    16,
+    17,
+    20
+   ],
+   "duration": 0.001,
+   "fingerprint": "661346e2c06ff439b7fb",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_currency.test_thousands_separator": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    4,
+    7,
+    16,
+    17,
+    20
+   ],
+   "duration": 0.001,
+   "fingerprint": "661346e2c06ff439b7fb",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_events.test_replies_in_request_order": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    2,
+    5,
+    7,
+    16,
+    17,
+    21
+   ],
+   "duration": 0.043,
+   "fingerprint": "a5777d15511fdafbb916",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_inventory.test_concurrent_reservations_never_oversell": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    6,
+    7,
+    16,
+    17,
+    22
+   ],
+   "duration": 0.023,
+   "fingerprint": "5659d8379e135ffb6971",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_inventory.test_reserve_more_than_available": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    6,
+    7,
+    16,
+    17,
+    22
+   ],
+   "duration": 0.003,
+   "fingerprint": "5659d8379e135ffb6971",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_pricing.test_discount": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    7,
+    8,
+    16,
+    17,
+    23
+   ],
+   "duration": 0.001,
+   "fingerprint": "7de445dd2f72fa1c434c",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_pricing.test_no_discount": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    7,
+    8,
+    16,
+    17,
+    23
+   ],
+   "duration": 0.001,
+   "fingerprint": "7de445dd2f72fa1c434c",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_quotes.test_fetch_quote": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    7,
+    9,
+    16,
+    17,
+    24
+   ],
+   "duration": 0.504,
+   "fingerprint": "a50a210173d483126b61",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_service.test_call_right_after_start": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    7,
+    10,
+    16,
+    17,
+    25
+   ],
+   "duration": 0.028,
+   "fingerprint": "2c86e91be0373bec1e68",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_settings.test_configure_currency": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    7,
+    11,
+    16,
+    17,
+    26
+   ],
+   "duration": 0.001,
+   "fingerprint": "d87c8fb0d86169ce2d83",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_settings.test_default_currency": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    7,
+    11,
+    16,
+    17,
+    26
+   ],
+   "duration": 0.001,
+   "fingerprint": "d87c8fb0d86169ce2d83",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_stats.test_mean_of_high_readings": {
+   "attempts": [
+    "failed",
+    "failed"
+   ],
+   "deps": [
+    2,
+    7,
+    12,
+    16,
+    17,
+    27
+   ],
+   "duration": 0.001,
+   "fingerprint": "7d197a75f6ba5409acf2",
+   "fingerprint_kind": "precise",
+   "message": "ZeroDivisionError: division by zero"
+  },
+  "tests.test_storage.test_write_and_read_back": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    7,
+    13,
+    16,
+    17,
+    28
+   ],
+   "duration": 0.005,
+   "fingerprint": "c5aa7cb98a948c980b28",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_text.test_slugify": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    7,
+    14,
+    16,
+    17,
+    29
+   ],
+   "duration": 0.001,
+   "fingerprint": "84e6840a345803f86e87",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_text.test_truncate": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    7,
+    14,
+    16,
+    17,
+    29
+   ],
+   "duration": 0.001,
+   "fingerprint": "84e6840a345803f86e87",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_text.test_word_count": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    7,
+    14,
+    16,
+    17,
+    29
+   ],
+   "duration": 0.005,
+   "fingerprint": "84e6840a345803f86e87",
+   "fingerprint_kind": "precise"
+  },
+  "tests.test_timing.test_batch_within_latency_budget": {
+   "attempts": [
+    "passed"
+   ],
+   "deps": [
+    7,
+    15,
+    16,
+    17,
+    30
+   ],
+   "duration": 0.001,
+   "fingerprint": "2da50738c0af1fdf8c7f",
+   "fingerprint_kind": "precise"
+  }
+ },
+ "timestamp": "2026-10-22T18:06:03Z",
+ "tree": "808e63d00068cb4bee91dd405d4d1389b04410ce",
+ "workflow": "CI with flaky test detection"
+}
