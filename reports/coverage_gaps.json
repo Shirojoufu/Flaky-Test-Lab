@@ -1,16 +1,16 @@
 {
  "available": true,
- "run_index": 4,
+ "run_index": 5,
  "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
- "percent": 88.61,
+ "percent": 86.83,
  "statements": 281,
- "covered": 249,
+ "covered": 244,
  "threshold": 80.0,
  "baseline": {
-  "run_index": 3,
-  "sha": "f1831d10a38d31f5b26c3f6a90394208bbd793a2",
-  "percent": 90.73,
-  "delta": -2.12
+  "run_index": 4,
+  "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+  "percent": 88.61,
+  "delta": -1.78
  },
  "below_threshold": [
   {
@@ -38,6 +38,22 @@
     [
      21,
      22
+    ]
+   ]
+  },
+  {
+   "file": "lab/service.py",
+   "percent": 68.57,
+   "statements": 35,
+   "covered": 24,
+   "missing": [
+    [
+     35,
+     43
+    ],
+    [
+     50,
+     51
     ]
    ]
   }

@@ -4,3 +4,4 @@ index,sha,timestamp,event,ref,pr_number,merged_pr,run_id,run_attempt,environment
 2,f1831d10a38d31f5b26c3f6a90394208bbd793a2,2026-10-22T20:59:19Z,push,refs/heads/main,,,39853467004,1,,True,19,18,1,0,1,0,94.74,88.71,
 3,f1831d10a38d31f5b26c3f6a90394208bbd793a2,2026-10-22T21:35:04Z,schedule,refs/heads/main,,,39858393363,1,,True,19,16,3,0,1,2,84.21,90.73,
 4,fa0888360b10432bae0bbb86ebccdd5d3bd52f07,2026-10-22T21:41:15Z,push,refs/heads/main,,,39859211928,1,PST,True,22,18,4,0,2,2,81.82,88.61,96.97
+5,fa0888360b10432bae0bbb86ebccdd5d3bd52f07,2026-10-22T21:41:15Z,push,refs/heads/main,,,39859211928,1,UTC,True,22,20,2,0,0,2,90.91,86.83,96.97

@@ -195,6 +195,92 @@
   ]
  },
  {
+  "key": "tests.test_service.test_call_right_after_start [UTC]",
+  "status": "flaky",
+  "severity": "medium",
+  "observations": 2,
+  "failures": 1,
+  "flaky_observations": 2,
+  "flaky_failures": 1,
+  "failure_rate": 0.5,
+  "flips": 1,
+  "retry_flakes": 1,
+  "main_failures": 1,
+  "active": true,
+  "flaky_fingerprints": [
+   "38056cd1b73d6a11254e"
+  ],
+  "flaky_runs": [
+   5
+  ],
+  "first_flaky_failure": {
+   "index": 5,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "UTC"
+  },
+  "introduced_in": {
+   "index": 5,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "UTC"
+  },
+  "previous_code_seen_in": null,
+  "failing_since": null,
+  "fixed_in": null,
+  "possibly_fixed_in": null,
+  "passes_since_fix": 0,
+  "passes_needed": 0,
+  "last_failure": {
+   "index": 5,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "UTC"
+  },
+  "last_seen": {
+   "index": 5,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "UTC"
+  },
+  "timeline": [
+   [
+    5,
+    0,
+    "failed"
+   ],
+   [
+    5,
+    1,
+    "passed"
+   ]
+  ]
+ },
+ {
   "key": "tests.test_settings.test_default_currency [PST]",
   "status": "flaky",
   "severity": "medium",
@@ -275,6 +361,92 @@
    ],
    [
     4,
+    1,
+    "passed"
+   ]
+  ]
+ },
+ {
+  "key": "tests.test_stats.test_mean_of_high_readings [UTC]",
+  "status": "flaky",
+  "severity": "medium",
+  "observations": 2,
+  "failures": 1,
+  "flaky_observations": 2,
+  "flaky_failures": 1,
+  "failure_rate": 0.5,
+  "flips": 1,
+  "retry_flakes": 1,
+  "main_failures": 1,
+  "active": true,
+  "flaky_fingerprints": [
+   "3d3f11962f95d0b619ef"
+  ],
+  "flaky_runs": [
+   5
+  ],
+  "first_flaky_failure": {
+   "index": 5,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "UTC"
+  },
+  "introduced_in": {
+   "index": 5,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "UTC"
+  },
+  "previous_code_seen_in": null,
+  "failing_since": null,
+  "fixed_in": null,
+  "possibly_fixed_in": null,
+  "passes_since_fix": 0,
+  "passes_needed": 0,
+  "last_failure": {
+   "index": 5,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "UTC"
+  },
+  "last_seen": {
+   "index": 5,
+   "sha": "fa0888360b10432bae0bbb86ebccdd5d3bd52f07",
+   "timestamp": "2026-10-22T21:41:15Z",
+   "event": "push",
+   "ref": "refs/heads/main",
+   "pr_number": null,
+   "merged_pr": null,
+   "run_id": "39859211928",
+   "run_attempt": 1,
+   "environment": "UTC"
+  },
+  "timeline": [
+   [
+    5,
+    0,
+    "failed"
+   ],
+   [
+    5,
     1,
     "passed"
    ]
